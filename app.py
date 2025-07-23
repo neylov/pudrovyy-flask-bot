@@ -38,3 +38,6 @@ def webhook():
         else:
             send_message(chat_id, "Я не понимаю эту команду. Напиши /catalog чтобы посмотреть товары.")
     return "ok"
+@app.route("/", methods=["GET"])
+def index():
+    return "Pudrovyy bot is working!"
